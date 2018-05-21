@@ -33,6 +33,11 @@ app.get('/pages', function (req, res, next) {
 	res.render('pages/index.html');
 });
 
+app.get('/admin/:a', function(req,res){
+  console.log(req.params.a)
+  res.render('admin/'+ req.params.a, { title: 'Express' });
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
