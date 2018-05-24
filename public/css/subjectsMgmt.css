@@ -1,0 +1,76 @@
+
+body {
+    font-family: 'Open Sans', 'Microsoft YaHei';
+    font-size: 14px;
+}
+
+.user-info {
+    vertical-align: super;
+}
+
+
+.sidebar>.nav-search .nav-search-input {
+    width: 188px!important;
+    max-width: 188px!important;
+    border: 0;
+}
+
+.sidebar>.nav-search {
+    height: 40px;
+    padding-top: 8px;
+    border: 0;
+    background-color: #FFF;
+}
+
+.nav-list>li>a>.menu-icon {
+    vertical-align: text-bottom;
+}
+
+
+/* rightsidebar S */
+.modal-body.sidebar {
+    padding: 0;
+}
+.modal.aside-vc .modal-dialog {
+    width: 190px;
+}
+.modal-body.sidebar .nav-list li.active>a:after {
+    border: 0;
+}
+
+.modal-body.sidebar .nav-list>li.active:before {
+    display: block;
+}
+
+.modal-body.sidebar .nav-list>li .submenu>li.active>a>.menu-icon {
+    color: inherit;
+}
+/* rightsidebar E */
+
+
+/* form-horizontal S */
+.form-horizontal .form-group>label {
+    margin-top: -10px;
+}
+.form-horizontal .form-group>label.single-line {
+    margin-top: 0;
+}
+.form-horizontal .form-group select {
+    height: 34px;
+    line-height: 34px;
+}
+/* form-horizontal E */
+
+
+
+/* header navbar S */
+.navbar:not(.navbar-collapse) .ace-nav {
+    border-width: 0px !important
+}
+.navbar:not(.navbar-collapse) .navbar-header.pull-left {
+    float: left !important
+}
+.navbar:not(.navbar-collapse) .navbar-header.pull-right {
+    float: right !important
+}
+/* header navbar E */

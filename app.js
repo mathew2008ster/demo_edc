@@ -14,7 +14,9 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.engine('html', require('ejs').__express);
+// add html engine for html page...
+app.engine('.html', require('ejs').renderFile); 
+// app.engine('html', require('ejs').__express);
 // app.set('view engine', 'html');
 
 // uncomment after placing your favicon in /public
@@ -28,14 +30,22 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 
-app.get('/pages', function (req, res, next) {
-	console.log(111);
-	res.render('pages/index.html');
-});
-
 app.get('/admin/:a', function(req,res){
   console.log(req.params.a)
   res.render('admin/'+ req.params.a, { title: 'Express' });
+});
+
+app.get('/:channel/:page', function (req, res, next) {
+  let channel = req.params.channel;
+  let page = req.params.page;
+  if (page.slice(-5) == '.html') {
+    page = page.slice(0, -5);
+  } else {
+    next();
+    return;
+  }
+  console.log('visit ---' + page + '')
+  res.render(channel + '/' + page);
 });
 
 // catch 404 and forward to error handler
