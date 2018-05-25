@@ -74,3 +74,16 @@ body {
     float: right !important
 }
 /* header navbar E */
+
+/* inline page S */
+.height-24px {
+    height: 24px !important;
+}
+.select-sm {
+    padding: 5px 4px 6px; height: auto;
+}
+/* .line-height-2x5 {
+    line-height: 2.5;
+} */
+/* inline page E */
+
