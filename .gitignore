@@ -64,3 +64,4 @@ typings/
 #add by mathew2008ster
 #vscode related files.
 .vscode/
+.idea/
