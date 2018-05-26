@@ -1,72 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-	<%include head/head.html%>
-	<body class="no-skin">
-		<%include header/header.html%>
+<%include head/head.html%>
+<body class="no-skin">
+<%include header/header.html%>
 
-		<div class="main-container ace-save-state" id="main-container">
-			<script type="text/javascript">
-				try{ace.settings.loadState('main-container')}catch(e){}
-			</script>
+<div class="main-container ace-save-state" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.loadState('main-container')
+        } catch (e) {
+        }
+    </script>
 
-			<div class="main-content">
-				<div class="main-content-inner">
-					<%include bread-crumbs/bread-crumbs.html%>
+    <div class="main-content">
+        <div class="main-content-inner">
+            <%include bread-crumbs/bread-crumbs.html%>
 
-					<div class="page-content">
-						<%include ace-settings-container/ace-settings-container.html%>
+            <div class="page-content">
+                <%include ace-settings-container/ace-settings-container.html%>
 
-						<div class="container center-block">
-							<div class="">
-								<!-- PAGE CONTENT BEGINS -->
-								<div class="tabbable">
-									<ul class="nav nav-tabs" id="myTab">
-										<li class="active">
-											<a data-toggle="tab" href="#home">
-												<i class="green ace-icon fa fa-home bigger-120"></i>
-												Home
-											</a>
-										</li>
+                <div class="container center-block">
+                    <div class="">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <div class="tabbable">
+                            <ul class="nav nav-tabs" id="myTab">
+                                <li class="active">
+                                    <a data-toggle="tab" href="#home">
+                                        <i class="green ace-icon fa fa-home bigger-120"></i>
+                                        空白项目
+                                    </a>
+                                </li>
 
-										<li>
-											<a data-toggle="tab" href="#messages">
-												Messages
-												<span class="badge badge-danger">4</span>
-											</a>
-										</li>
-									</ul>
+                                <li>
+                                    <a data-toggle="tab" href="#messages">
+                                        <i class="green ace-icon fa fa-clipboard" bigger-120"></i>
+                                        复制项目
+                                    </a>
+                                </li>
+                            </ul>
 
-									<div class="tab-content">
-										<div id="home" class="tab-pane fade in active">
-											<p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
-										</div>
+                            <div class="tab-content">
+                                <div id="home" class="tab-pane fade in active">
+                                    <form class="" id="validation-form-1" method="get">
+                                        <fieldset class="row">
+                                            <div class="form-group col-xs-12 col-sm-3">
+                                                <label class="control-label no-padding-right" for="serial-num"> 项目编号*</label>
+                                                <input type="text" id="serial-num" name="serial-num" class="form-control">
+                                            </div>
+                                            <div class="form-group col-xs-12 col-sm-3">
+                                                <label class="control-label no-padding-right" for="bpm">项目名称*(Project Name)</label>
+                                                <input type="text" id="bpm" name="bpm" class="form-control">
+                                            </div>
+                                            <div class="form-group col-xs-12 col-sm-3">
+                                                <label class="control-label no-padding-right" for="describe">项目描述*(Project Describe)</label>
+                                                <input type="text" id="describe" name="describe" class="form-control">
+                                            </div>
+                                            <div class="form-group col-xs-12 col-sm-3">
+                                                <label class="control-label no-padding-right" for="pictrue">图片*(Project Describe)</label>
+                                                <div class="input-group">
+                                                    <input class="form-control date-picker" id="pictrue" type="file">
+                                                    <span class="input-group-addon"><i class="fa fa-indent bigger-110"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-xs-6 col-sm-3">
+                                                <label class="control-label no-padding-right" for="mrnr">病历号规则*()</label>
+                                                <select class="form-control" id="mrnr" name="mrnr">
+                                                    <option value="">Value</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-xs-6 col-sm-3">
+                                                <label class="control-label no-padding-right" for="bkgws">病历号位数*()</label>
+                                                <input disabled type="text" value="1~20" id="bkgws" name="bkgws" class="form-control">
+                                            </div>
+                                            <div class="form-group col-xs-6 col-sm-3">
+                                                <label class="control-label no-padding-right" for="xmtxcd">姓名填写长度*()</label>
+                                                <input type="text" value="1~20" id="xmtxcd" name="xmtxcd" class="form-control">
+                                            </div>
+                                            <div class="form-group col-xs-6 col-sm-3">
+                                                <label class="control-label no-padding-right" for="sbf">申办方*()</label>
+                                                <input type="text" id="sbf" name="sbf" class="form-control">
+                                            </div>
+                                            <div class="col-xs-6 col-sm-3">
+                                                <div class="checkbox"><label><input type="checkbox" value="">入组号</label></div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-3">
+                                                <div class="checkbox"><label><input type="checkbox" value="">异步逻辑核查</label></div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-3">
+                                                <div class="checkbox"><label><input type="checkbox" value="">病人日志</label></div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-3">
+                                                <div class="checkbox"><label><input type="checkbox" value="">Specify分割</label></div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="form-actions center">
+                                            <button type="button" class="btn btn-sm btn-success">保存<i class="ace-icon fa fa-check bigger-110"></i></button>
+                                            &nbsp; &nbsp; &nbsp;
+                                            <button type="button" class="btn btn-sm"> <i class="ace-icon fa fa-undo bigger-110"></i>重置</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="messages" class="tab-pane fade">
+                                    <form class="" id=space-form" method="get">
+                                        <fieldset class="row">
+                                            <div class="form-group col-xs-12 col-sm-3">
+                                                <label class="control-label no-padding-right" for="serial-num-2"> 项目编号*</label>
+                                                <select class="form-control" id="serial-num-2" name="serial-num-2">
+                                                    <option value="">SNG1401ICR</option>
+                                                    <option value="1">SNG1401ICR</option>
+                                                    <option value="2">SNG1401ICR</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-xs-12 col-sm-3">
+                                                <label class="control-label no-padding-right" for="env-num">环境编号*</label>
+                                                <select class="form-control" id="env-num" name="env-num">
+                                                    <option value="">Env</option>
+                                                    <option value="1">Env1</option>
+                                                    <option value="2">Env2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-3">
+                                                <div class="checkbox"><label><input type="checkbox" value="">有效</label></div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
 
-										<div id="messages" class="tab-pane fade">
-											<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
-										</div>
+                            </div>
+                        </div>
+                        <!-- PAGE CONTENT ENDS -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
 
-										<div id="dropdown1" class="tab-pane fade">
-											<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade.</p>
-										</div>
-									</div>
-								</div>
-								<!-- PAGE CONTENT ENDS -->
-							</div><!-- /.col -->
-						</div><!-- /.row -->
-					</div><!-- /.page-content -->
-				</div>
-			</div><!-- /.main-content -->
+    <%include footer/footer.html%>
 
-			<%include footer/footer.html%>
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+        <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+    </a>
+</div><!-- /.main-container -->
 
-			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
-				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
-			</a>
-		</div><!-- /.main-container -->
+<!-- basic scripts -->
+<%include basic-scripts/basic-scripts.ejs%>
 
-			<!-- basic scripts -->
-		<%include basic-scripts/basic-scripts.ejs%>
-
-		<!-- inline scripts related to this page -->
-	</body>
+<!-- inline scripts related to this page -->
+</body>
 </html>
