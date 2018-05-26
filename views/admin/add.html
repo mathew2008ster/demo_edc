@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<%include common/head/head.html%>
-<link rel="stylesheet" type="text/css" href="/css/admin/list.css">
+    <%include common/head/head.html%>
+    <link rel="stylesheet" href="/css/admin/add.css">
 </head>
 <body class="no-skin">
 <%include common/header/header.html%>
@@ -14,20 +14,22 @@
         } catch (e) {
         }
     </script>
-   <%include common/sidebar/sidebar.html%>
+
+    <%include common/sidebar/sidebar.html%>
+
     <div class="main-content">
         <div class="main-content-inner">
-            <%include  common/bread-crumbs/bread-crumbs.html%>
-
-            <div class="page-content no-broder">
-               <!--% include ace-settings-container.ejs %-->
-               <!-- PAGE CONTENT BEGINS -->
-                <%include list/index.ejs%>
+             <%include common/bread-crumbs/bread-crumbs.html%>
+            <div class="page-content">
+                <%include common/ace-settings-container/ace-settings-container.html%>
+                <!-- PAGE CONTENT BEGINS -->
+                <%include add/index.html%>
+                <!-- PAGE CONTENT ENDS -->
             </div><!-- /.page-content -->
         </div>
     </div><!-- /.main-content -->
 
-    <%include  common/footer/footer.html%>
+    <%include common/footer/footer.html%>
 
     <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
         <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
@@ -35,7 +37,7 @@
 </div><!-- /.main-container -->
 
 <!-- basic scripts -->
-<%include  common/basic-scripts/basic-scripts.ejs%>
+<%include common/basic-scripts/basic-scripts.ejs%>
 
 <!-- inline scripts related to this page -->
 </body>
