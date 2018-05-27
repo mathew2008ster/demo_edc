@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'Open Sans', 'Microsoft YaHei';
+    font-family: 'Open Sans', 'Microsoft YaHei', 'Font Awesome 5 Free';
     font-size: 14px;
 }
 
@@ -72,6 +72,19 @@ body {
 }
 .navbar:not(.navbar-collapse) .navbar-header.pull-right {
     float: right !important
+}
+
+.navbar-header .breadcrumb>li>a {
+    color: #eee;
+}
+.navbar-header .breadcrumb>li.active {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .breadcrumb>li+li.active:before {
+        display: none;
+    }
 }
 /* header navbar E */
 
