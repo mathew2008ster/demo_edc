@@ -1,0 +1,14 @@
+.space-80, [class*=vspace-80] {
+    max-height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+    margin: 80px 0 79px;
+}
+.space-60, [class*=vspace-60] {
+    max-height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+    margin: 60px 0 59px;
+}
+.font-80 { font-size: 80px;}
+.w-80 {width: 80px;}

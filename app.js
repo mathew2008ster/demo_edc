@@ -48,6 +48,13 @@ app.get('/:channel/:page', function (req, res, next) {
   res.render(channel + '/' + page);
 });
 
+app.get('/404.html', function(req,res,next){
+  res.render('404.html')
+});
+app.get('/500.html', function(req,res,next){
+    res.render('500.html')
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

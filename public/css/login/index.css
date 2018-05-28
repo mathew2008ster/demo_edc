@@ -1,0 +1,11 @@
+.main-container {
+    background: transparent;
+}
+body {
+    background: url("/img/login_bg_2x.jpg") no-repeat center top; background-size: cover;
+}
+.footer-content  { color: #fff;}
+.footer-content .blue.bolder  { color: #fff !important;}
+.authcode img{ height: 70%;}
+
+
