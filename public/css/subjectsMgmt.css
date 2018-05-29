@@ -63,7 +63,7 @@ body {
 
 
 
-/* header navbar S */
+/* navbar navbar S */
 .navbar:not(.navbar-collapse) .ace-nav {
     border-width: 0px !important
 }
@@ -86,7 +86,7 @@ body {
         display: none;
     }
 }
-/* header navbar E */
+/* navbar navbar E */
 
 /* inline page S */
 .height-24px {
