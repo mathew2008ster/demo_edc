@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <%include common/head/head.ejs%>
-    <link rel="stylesheet" type="text/css" href="/css/draft/settings.css">
+    <link rel="stylesheet" type="text/css" href="/css/draft/versionList.css">
 </head>
 <body class="no-skin">
 <%include common/header/header.html%>
@@ -14,19 +14,19 @@
         } catch (e) {
         }
     </script>
-
     <%include common/sidebar/sidebar.html%>
-
     <div class="main-content">
         <div class="main-content-inner">
-
-            <div class="page-content">
-                <%include settings/index.ejs%>
+            <div class="page-content no-broder">
+                <!--% include ace-settings-container.ejs %-->
+                <!-- PAGE CONTENT BEGINS -->
+                <div class="space-4"></div>
+                <%include versionList/index.ejs%>
             </div><!-- /.page-content -->
         </div>
     </div><!-- /.main-content -->
 
-    <%include common/footer/footer.html%>
+    <%include  common/footer/footer.html%>
 
     <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
         <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
@@ -34,8 +34,9 @@
 </div><!-- /.main-container -->
 
 <!-- basic scripts -->
-<%include common/basic-scripts/basic-scripts.ejs%>
+<%include  common/basic-scripts/basic-scripts.ejs%>
 
 <!-- inline scripts related to this page -->
+<script src="/js/draft/versionList.js"></script>
 </body>
 </html>

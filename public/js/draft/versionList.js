@@ -1,4 +1,6 @@
-
+/**
+ * Created by admin on 2018/5/29.
+ */
 $('.more-vert-label').click(function(event) {
     event.preventDefault();
     event.stopPropagation();
