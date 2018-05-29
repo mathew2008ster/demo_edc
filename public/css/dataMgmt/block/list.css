@@ -1,0 +1,14 @@
+table tr:last-child td { border-bottom: 1px solid #ddd; }
+.table>tbody>tr>td, .table>tbody>tr>th,
+.table>tfoot>tr>td, .table>tfoot>tr>th,
+.table>thead>tr>td, .table>thead>tr>th{
+    vertical-align: middle;
+}
+.table tr td { position: relative;}
+.page-content table td .material-icons { vertical-align: middle;}
+
+@media (max-width: 767px) {
+    .file-options { position: absolute; top: 0; right: 10px; background-color: #fff; padding: 10px; border: 1px solid #eee; text-align: center; line-height: 32px; width: 60px; z-index: 1;}
+    .file-options a { padding-right: 4px;}
+    .table-striped>tbody>tr:nth-of-type(odd) { background-color: transparent;}
+}
