@@ -12,3 +12,9 @@
 }
 .font-80 { font-size: 80px;}
 .w-80 {width: 80px;}
+
+@media (max-width: 479px)  {
+    .navbar-fixed-top + .main-container {
+         padding-top: 45px;
+    }
+}

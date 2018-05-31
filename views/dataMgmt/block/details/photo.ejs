@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../../../common/head/index.ejs %>
+    <link rel="stylesheet" href="/css/dataMgmt/block/details/photo.css">
+</head>
+<body class="no-skin">
+<% include ../../common/header/index.ejs %>
+
+<div class="main-container ace-save-state" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.loadState('main-container')
+        } catch (e) {
+        }
+    </script>
+    <% include ../../common/sidebar/index.ejs %>
+    <div class="main-content">
+        <div class="main-content-inner" id="selected-template">
+            <div class="page-header" id="page-header-grey">
+                <h4>
+                    <a href="#modal-table" role="button" class="dark" data-toggle="modal">可选模板</a>
+                    <span class="label label-info pull-right">01</span>
+                </h4>
+            </div>
+            <div class="bg-primary page-header navbar-static-bottom navbar-fixed-bottom no-margin-bottom" id="page-header-primary">
+                <h4>
+                    <a href="#modal-table" role="button" class="white" data-toggle="modal">已经选模板</a>
+                    <span class="label label-info pull-right">01</span>
+                </h4>
+            </div>
+            <div class="search-bar">
+                <form class="form-search">
+                    <span class="input-icon input-icon-right block">
+                          <input type="text" placeholder="Search ..." class="form-field-icon-2" autocomplete="off">
+                        <i class="ace-icon fa fa-search nav-search-icon pull-rigth"></i>
+                    </span>
+                </form>
+            </div>
+
+            <div class="page-content no-broder">
+                <!--% include ace-settings-container.ejs %-->
+                <!-- PAGE CONTENT BEGINS -->
+                <% include photo/index.ejs %>
+            </div><!-- /.page-content -->
+        </div>
+    </div><!-- /.main-content -->
+
+
+</div><!-- /.main-container -->
+
+<!-- basic scripts -->
+<% include ../../common/basic-scripts/index.ejs %>
+
+<!-- inline scripts related to this page -->
+<script src="/js/dataMgmt/block/details/photo.js"></script>
+</body>
+</html>
