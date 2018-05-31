@@ -2,9 +2,10 @@
 frontend templates for edc project.
 
 链接：
-http://marswind.cn:3000/draft/settings.html 
-http://marswind.cn:3000/draft/versionDetails.html 
-http://marswind.cn:3000/draft/versionList.html 
+草稿管理
+http://marswind.cn:3000/draft/settings.html
+http://marswind.cn:3000/draft/versionDetails.html
+http://marswind.cn:3000/draft/versionList.html
 http://marswind.cn:3000/draft/versionHistory.html 
 
 http://marswind.cn:3000/admin/settings.html 
