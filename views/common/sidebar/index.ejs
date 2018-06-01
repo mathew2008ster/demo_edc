@@ -1,257 +1,85 @@
-<%include ../../subjectsMgmt/sidebar.ejs %>
-<div id="sidebar2" style="margin-top: 4px;" class="sidebar responsive menu-min ace-save-state">
-    <ul class="nav nav-list">
-        <li class="">
-            <a href="javascript:;">
-                <!-- <i class="menu-icon fa fa-home"></i> -->
-                <i class="menu-icon material-icons">home</i>
-                <span class="menu-text"> 主页 </span>
-            </a>
+<div id="sidebar" class="sidebar       h-sidebar                navbar-collapse collapse  ace-save-state">
+    <script type="text/javascript">
+        try { ace.settings.loadState('sidebar') } catch (e) { }
+    </script>
 
-            <b class="arrow"></b>
+    <ul class="nav nav-list">
+        <li class="hover  hidden-xs">
+            <a href="javascript:;">
+                <span class="menu-text"> <img src="/img/logo.png" alt="logo2" style="height: 20px;"> </span>
+            </a>
         </li>
 
-        <li class="">
+        <li class="hover">
             <a href="javascript:;">
-                <i class="menu-icon material-icons">equalizer</i>
                 <span class="menu-text"> 报表 </span>
             </a>
 
-            <b class="arrow"></b>
         </li>
 
-        <li class="active open ">
+        <li class="hover">
             <a href="#" class="dropdown-toggle">
-                <!-- <i class="menu-icon fa fa-th-list"></i> -->
-                <i class="menu-icon material-icons">widgets</i>
                 <span class="menu-text">
                     项目管理
                 </span>
 
                 <b class="arrow fa fa-angle-down"></b>
             </a>
-
-            <b class="arrow"></b>
-
-            <ul class="submenu">
-                <li class="active ">
-                    <a href="/admin/add.html"><i class="menu-icon fa fa-caret-right"></i>添加项目</a>
-                    <b class="arrow"></b>
-                </li>
-                <li class="">
-                    <a href="/admin/list.html"><i class="menu-icon fa fa-caret-right"></i>项目列表</a>
-                    <b class="arrow"></b>
-                </li>
-                <li class="">
-                    <a href="/admin/settings.html"><i class="menu-icon fa fa-caret-right"></i>项目设置</a>
-                    <b class="arrow"></b>
-                </li>
-                <li class="">
-                    <a href="/admin/draft.html"><i class="menu-icon fa fa-caret-right"></i>项目草稿</a>
-                    <b class="arrow"></b>
-                </li>
-                <li class="">
-                    <a href="/admin/draft.html" class="dropdown-toggle">
-                        <i class="menu-icon fa fa-caret-right"></i>项目04
-                        <!--<b class="arrow fa fa-angle-down"></b>-->
-                    </a>
-                    <b class="arrow"></b>
-                    <ul class="submenu">
-                        <li class="">
-                            <a href="javascript:;">
-                                <i class="menu-icon fa fa-leaf green"></i>
-                                Item #1
-                            </a>
-
-                            <b class="arrow"></b>
-                        </li>
-
-                        <li class="">
-                            <a href="#" class="dropdown-toggle">
-                                <i class="menu-icon fa fa-pencil orange"></i>
-
-                                4th level
-                                <b class="arrow fa fa-angle-down"></b>
-                            </a>
-
-                            <b class="arrow"></b>
-
-                            <ul class="submenu">
-                                <li class="">
-                                    <a href="javascript:;">
-                                        <i class="menu-icon fa fa-plus purple"></i>
-                                        Add Project
-                                    </a>
-
-                                    <b class="arrow"></b>
-                                </li>
-
-                                <li class="">
-                                    <a href="javascript:;">
-                                        <i class="menu-icon fa fa-eye pink"></i>
-                                        View Project
-                                    </a>
-
-                                    <b class="arrow"></b>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
         </li>
 
-        <li class="">
+        <li class="hover active">
             <a href="#" class="dropdown-toggle">
-                <!-- <i class="menu-icon fa fa-plus-square"></i> -->
-                <i class="menu-icon material-icons">add_box</i>
                 <span class="menu-text"> 中心管理 </span>
-
                 <b class="arrow fa fa-angle-down"></b>
             </a>
 
-            <b class="arrow"></b>
-
-            <ul class="submenu">
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        item #1
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        item #2
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-            </ul>
         </li>
 
-        <li class="">
+        <li class="hover">
             <a href="#" class="dropdown-toggle">
-                <!-- <i class="menu-icon fas fa-user-friends"></i> -->
-                <i class="menu-icon material-icons">group</i>
                 <span class="menu-text"> 用户管理 </span>
 
                 <b class="arrow fa fa-angle-down"></b>
             </a>
 
-            <b class="arrow"></b>
-
-            <ul class="submenu">
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        用户 #1
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        用户 #2
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-            </ul>
         </li>
 
-        <li class="">
+        <li class="hover">
             <a href="#" class="dropdown-toggle">
-                <!-- <i class="menu-icon fa fa-tint"></i> -->
-                <i class="menu-icon material-icons">invert_colors</i>
                 <span class="menu-text"> 药物管理 </span>
 
                 <b class="arrow fa fa-angle-down"></b>
             </a>
-
-            <b class="arrow"></b>
-
-            <ul class="submenu">
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        item #1
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        item #2
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-            </ul>
         </li>
 
-        <li class="">
+        <li class="hover">
             <a href="#" class="dropdown-toggle">
-                <!-- <i class="menu-icon fa fa-cog"></i> -->
-                <i class="menu-icon material-icons">settings</i>
                 <span class="menu-text"> EDC设置 </span>
 
                 <b class="arrow fa fa-angle-down"></b>
             </a>
-
-            <b class="arrow"></b>
-
-            <ul class="submenu">
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        item #1
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-
-                <li class="">
-                    <a href="javascript:;">
-                        <i class="menu-icon fa fa-caret-right"></i>
-                        item #2
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-            </ul>
         </li>
 
-        <li class="">
+        <li class="hover">
             <a href="javascript:;">
-                <!-- <i class="menu-icon fa fa-info-circle"></i> -->
-                <i class="menu-icon material-icons">info</i>
                 <span class="menu-text"> 关于 </span>
             </a>
 
-            <b class="arrow"></b>
         </li>
 
-        <li class="">
+        <li class="hover">
             <a href="javascript:;">
-                <!-- <i class="menu-icon fa fa-sign-out"></i> -->
-                <i class="menu-icon material-icons">directions_run</i>
                 <span class="menu-text"> 退出 </span>
             </a>
 
-            <b class="arrow"></b>
         </li>
 
     </ul>
+    <!-- /.nav-list -->
 
-    <div class="sidebar-toggle sidebar-collapse">
-        <i id="sidebar3-toggle-icon" class="ace-icon fa fa-angle-double-right ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
-    </div>
-</div><!-- .sidebar -->
+    <!--<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">-->
+    <!--<i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left"-->
+    <!--data-icon2="ace-icon fa fa-angle-double-right"></i>-->
+    <!--</div>-->
+</div>
+<%include sidebar2.ejs%>

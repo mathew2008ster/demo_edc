@@ -1,1 +1,1 @@
-console.log('settings')
+console.log('admin settings');

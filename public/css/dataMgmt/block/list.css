@@ -7,8 +7,19 @@ table tr:last-child td { border-bottom: 1px solid #ddd; }
 .table tr td { position: relative;}
 .page-content table td .material-icons { vertical-align: middle;}
 
+.block-list .no-border { border: none;}
+/*.block-list select.no-hove:hover { background: none;-webkit-appearance: none;}*/
+/*.block-list select option.no-hove:hover { background: none;-webkit-appearance: none;}*/
+
+.block-list select.no-hover {background: none !important;}
+
 @media (max-width: 767px) {
     .file-options { position: absolute; top: 0; right: 10px; background-color: #fff; padding: 10px; border: 1px solid #eee; text-align: center; line-height: 32px; width: 60px; z-index: 1;}
     .file-options a { padding-right: 4px;}
     .table-striped>tbody>tr:nth-of-type(odd) { background-color: transparent;}
+    .page-content { padding: 8px 0 24px;}
+
+}
+@media (min-width: 768px) {
+    .file-options { display: block !important;}
 }

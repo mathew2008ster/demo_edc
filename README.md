@@ -3,21 +3,27 @@ frontend templates for edc project.
 
 链接：
 ###数据管理
-
+添加数据块
 http://marswind.cn:3000/dataMgmt/block/add.html
+数据块列表
 http://marswind.cn:3000/dataMgmt/block/list.html
+详情
+数据块设置
 http://marswind.cn:3000/dataMgmt/block/details/index.html
 照片模版
 http://marswind.cn:3000/dataMgmt/block/details/photo.html
-字段列表
+字段列表（未完成）
 http://marswind.cn:3000/dataMgmt/block/details/list.html
 
 
 ### 草稿管理
-
+草稿设置
 http://marswind.cn:3000/draft/settings.html
-http://marswind.cn:3000/draft/versionDetails.html  
-http://marswind.cn:3000/draft/versionList.html 
+版本详情
+http://marswind.cn:3000/draft/versionDetails.html
+版本列表
+http://marswind.cn:3000/draft/versionList.html
+历史版本
 http://marswind.cn:3000/draft/versionHistory.html
 
 

@@ -7,6 +7,18 @@ table tr:last-child td { border-bottom: 1px solid #ddd; }
 }
 .lbl.middle:after ,
 .lbl.middle:before { content: '' }
+/*.search-bar .btn.btn-sm,*/
+.search-bar .nav-search-input{
+	height: 33px;
+}
+.search-bar .select-sm,
+.search-bar .select-sm option{
+	height: 33px;
+	line-height: 27px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
 
 
 

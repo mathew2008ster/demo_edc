@@ -1,14 +1,36 @@
-<div class="space-10"></div>
-<p>
-    <button type="button" class="btn btn-sm btn-primary">添加草稿</button>
+<div class="space-8 hidden-xs"></div>
+<p class="hidden-xs">
+    <button type="button" class="btn btn-sm btn-primary">添加数据块</button>
+</p>
+<p class="visible-xs">
+    <select class="form-control no-hover no-border">
+        <option value="">有效</option>
+        <option value="">无效</option>
+    </select>
 </p>
 
 <table class="table table-hover">
     <tr>
-        <td><div class="col-xs-12 col-sm-6">draf01</div>
-            <div class="col-xs-12 col-sm-6" ><a  href="#">yanbian.zhu</a></div>
+        <td class="hidden-xs">DM1</td>
+        <td>
+            <div class="col-xs-12 col-sm-12">知情同意书</div>
+            <div class="col-xs-12 grey visible-xs" >No sign/Open</div>
         </td>
-        <td class="hidden-xs">2018-02-01</td>
+        <td class="hidden-xs">4个数据节点</td>
+        <td class="hidden-xs">
+            <select class="form-control no-border no-hover dark"  id="serial-num-2" name="serial-num-2">
+                <option value="">有效</option>
+                <option value="1">有效</option>
+                <option value="2">有效</option>
+            </select>
+        </td>
+        <td class="hidden-xs">
+            <select class="form-control no-border no-hover dark"  id="serial-num-2" name="serial-num-2">
+                <option value="">签名</option>
+                <option value="1">签名</option>
+                <option value="2">签名</option>
+            </select>
+        </td>
         <td class="text-right">
             <div class="hidden-xs action-buttons file-options">
                 <a href="" class="dark"><i class="material-icons ">mode_edit</i></a>
@@ -17,4 +39,5 @@
             <label  class="visible-xs more-vert-label"><a><i class="material-icons dark">more_vert</i></a></label>
         </td>
     </tr>
+
 </table>

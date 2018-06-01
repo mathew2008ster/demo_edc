@@ -1,20 +1,11 @@
 .skin-3 .main-container:before { background: #fff;}
 .border-bottom {border-bottom: 1px solid #eee !important;}
-.space-80, [class*=vspace-80] {
-    max-height: 1px;
-    min-height: 1px;
-    overflow: hidden;
-    margin: 80px 0 79px;
-}
-.space-60, [class*=vspace-60] {
-    max-height: 1px;
-    min-height: 1px;
-    overflow: hidden;
-    margin: 60px 0 59px;
-}
+.space-80, [class*=vspace-80] {  max-height: 1px;  min-height: 1px;  overflow: hidden;  margin: 80px 0 79px;  }
+.space-60, [class*=vspace-60] {max-height: 1px;min-height: 1px;overflow: hidden;margin: 60px 0 59px;}
 .space-1, [class*=vspace-1] {  max-height: 1px;  min-height: 1px;  overflow: hidden;  margin: 1px 0 0;}
 .font-80 { font-size: 80px;}
 .w-80 {width: 80px;}
+.vertical-bottom { vertical-align: bottom !important;}
 
 @media (max-width: 479px)  {
     .navbar-fixed-top + .main-container {
