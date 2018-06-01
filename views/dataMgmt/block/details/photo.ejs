@@ -16,32 +16,37 @@
     </script>
     <% include ../../common/sidebar/index.ejs %>
     <div class="main-content">
-        <div class="main-content-inner" id="selected-template">
-            <div class="page-header" id="page-header-grey">
-                <h4>
-                    <a href="#modal-table" role="button" class="dark" data-toggle="modal">可选模板</a>
-                    <span class="label label-info pull-right">01</span>
-                </h4>
-            </div>
-            <div class="bg-primary page-header navbar-static-bottom navbar-fixed-bottom no-margin-bottom" id="page-header-primary">
-                <h4>
-                    <a href="#modal-table" role="button" class="white" data-toggle="modal">已经选模板</a>
-                    <span class="label label-info pull-right">01</span>
-                </h4>
-            </div>
-            <div class="search-bar">
-                <form class="form-search">
+        <div class="main-content-inner clearfix" id="selected-template">
+
+            <div class="page-content no-broder">
+                <div>
+                    <div class="page-header" id="page-header-grey">
+                        <h4>
+                            <a href="#modal-table" role="button" class="dark" data-toggle="modal">可选模板</a>
+                            <span class="label label-info pull-right">01</span>
+                        </h4>
+                    </div>
+                    <div class="bg-primary page-header navbar-static-bottom navbar-fixed-bottom no-margin-bottom" id="page-header-primary">
+                        <h4>
+                            <a href="#modal-table" role="button" class="white" data-toggle="modal">已经选模板</a>
+                            <span class="label label-info pull-right">01</span>
+                        </h4>
+                    </div>
+                    <div class="search-bar">
+                        <form class="form-search">
                     <span class="input-icon input-icon-right block">
                           <input type="text" placeholder="Search ..." class="form-field-icon-2" autocomplete="off">
                         <i class="ace-icon fa fa-search nav-search-icon pull-rigth"></i>
                     </span>
-                </form>
-            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="photo-content">
+                    <!--% include ace-settings-container.ejs %-->
+                    <!-- PAGE CONTENT BEGINS -->
+                    <% include photo/index.ejs %>
+                </div>
 
-            <div class="page-content no-broder">
-                <!--% include ace-settings-container.ejs %-->
-                <!-- PAGE CONTENT BEGINS -->
-                <% include photo/index.ejs %>
             </div><!-- /.page-content -->
         </div>
     </div><!-- /.main-content -->

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%include common/head/index.ejs%>
-    <link rel="stylesheet" type="text/css" href="/css/draft/versionList.css">
+    <%include ../../common/head/index.ejs%>
+    <link rel="stylesheet" href="/css/dataMgmt/block/list.css">
 </head>
 <body class="no-skin">
-<%include common/header/index.ejs%>
+<%include ../../common/header/index.ejs%>
 
 <div class="main-container ace-save-state" id="main-container">
     <script type="text/javascript">
@@ -14,19 +14,19 @@
         } catch (e) {
         }
     </script>
-    <%include common/sidebar/index.ejs%>
+    <%include ../../common/sidebar/index.ejs%>
     <div class="main-content">
         <div class="main-content-inner">
             <div class="page-content no-broder">
                 <!--% include ace-settings-container.ejs %-->
                 <!-- PAGE CONTENT BEGINS -->
-                <div class="space-8"></div>
-                <%include versionHistory/index.ejs%>
+                <div class="space-4"></div>
+                <%include list/index.ejs%>
             </div><!-- /.page-content -->
         </div>
     </div><!-- /.main-content -->
 
-    <%include  common/footer/index.ejs%>
+    <%include  ../../common/footer/index.ejs%>
 
     <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
         <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
@@ -34,9 +34,9 @@
 </div><!-- /.main-container -->
 
 <!-- basic scripts -->
-<%include  common/basic-scripts/index.ejs%>
+<%include  ../../common/basic-scripts/index.ejs%>
 
 <!-- inline scripts related to this page -->
-<script src="/js/draft/versionList.js"></script>
+<script src="/js/dataMgmt/block/list.js"></script>
 </body>
 </html>
