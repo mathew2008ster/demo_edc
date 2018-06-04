@@ -6,6 +6,7 @@
 .font-80 { font-size: 80px;}
 .w-80 {width: 80px;}
 .vertical-bottom { vertical-align: bottom !important;}
+.no-border-bottom { border-bottom: none !important;}
 
 @media (max-width: 479px)  {
     .navbar-fixed-top + .main-container {
@@ -17,10 +18,13 @@
     .h-sidebar.sidebar-fixed+.main-content {
         padding-top: 60px;
     }
-    .sidebar.h-sidebar .nav-list>li.hover {
-        min-width: 80px; text-align: center;
-    }
+    #sidebar { float: left !important; margin-top: 0;}
+}
+@media only screen and (max-width: 992px){
+    .navbar { border-bottom: 1px solid #cccccc;}
 }
 
+
 /*主题*/
-.no-skin .navbar { background: #222a2d;}
+.no-skin .navbar { background: #f8f8f8;}
+.navbar-buttons.navbar-header { position: absolute; right: 0; top: 0;}
