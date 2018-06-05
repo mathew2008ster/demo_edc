@@ -1,0 +1,23 @@
+<p class="search-bar  hidden-xs">
+    <button type="button" class="btn btn-sm btn-primary">添加项字段</button>
+    <span class="inline vertical-bottom">
+       <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off">
+       <!--<a class="ace-icon nav-search-icon smaller-20">搜索</a>-->
+    </span>
+    <span class="input-icon vertical-bottom">
+        <select name="number" id="number" class="select-sm">
+            <option selected="selected">有效</option>
+            <option>无效</option>
+        </select>
+        <select name="lastperiod" id="lastperiod" class="select-sm hidden-xs">
+            <option selected="selected">最近更新</option>
+            <option>最近三个月</option>
+        </select>
+    </span>
+</p>
+
+<div id="accordion" class="accordion-style1 panel-group">
+    <%include one.ejs%>
+    <%include two.ejs%>
+    <%include three.ejs%>
+</div>

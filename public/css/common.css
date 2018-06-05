@@ -28,3 +28,4 @@
 /*主题*/
 .no-skin .navbar { background: #f8f8f8;}
 .navbar-buttons.navbar-header { position: absolute; right: 0; top: 0;}
+.user-info { vertical-align: super; }
