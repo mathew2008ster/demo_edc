@@ -7,27 +7,69 @@
             </a>
         </h4>
     </div>
-    <div class="panel-collapse collapse in" id="collapseTwo">
+    <div class="panel-collapse collapse" id="collapseTwo">
         <div class="panel-body">
-            <form class="row" role="form">
-                <div class="col-xs-4">
-                    <div class="checkbox">
-                        <label for="form-field-21"><input type="checkbox" checked id="form-field-21" placeholder=""/>数字必填提示</label>
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="form-field-21">变量编号<b class="red">*</b>:</label>
+                    <div class="col-sm-9">
+                        <span class="input-icon no-padding-left input-icon-right col-xs-12 col-sm-8 no-padding-right">
+                            <input type="text" class="form-control" id="form-field-21" placeholder=""/>
+                             <i class="ace-icon material-icons green">done</i>
+                        </span>
                     </div>
                 </div>
-                <div class="col-xs-4">
-                    <div class="checkbox">
-                        <label><input type="checkbox" checked placeholder=""/>数据一致性提示</label>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="form-field-22">格式类型<b class="red">*</b>:</label>
+                    <div class="col-sm-9">
+                        <div class="col-xs-12 col-sm-8 no-padding">
+                            <select class="form-control" id="form-field-22" name="form-field-22">
+                                <option value="1">SVSTDTC</option>
+                                <option value="2">SVSTDTC</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-4">
-                    <div class="checkbox">
-                        <label><input type="checkbox" checked/>之后日期提示</label>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="form-field-23">变量格式<b class="red">*</b>:</label>
+                    <div class="col-sm-9"><input type="text" id="form-field-23" placeholder="" class="col-xs-12 col-sm-8"/></div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="form-field-24">数据字典<b class="red">*</b>:</label>
+                    <div class="col-sm-9">
+                        <div class="col-xs-12 col-sm-8 no-padding">
+                            <select class="form-control" id="form-field-24">
+                                <option value="1">SVSTDTC</option>
+                                <option value="2">SVSTDTC</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div class="form-group col-xs-12">
-                    <label>数据范围提问:</label>
-                    <input type="text"> - <input type="text">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="form-field-25">单位字典<b class="red">*</b>:</label>
+                    <div class="col-sm-9">
+                        <div class="col-xs-12 col-sm-8 no-padding">
+                            <select class="form-control" id="form-field-25">
+                                <option value="1">SVSTDTC</option>
+                                <option value="2">SVSTDTC</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label no-padding-right" for="form-field-26">编码字典<b class="red">*</b>:</label>
+                    <div class="col-sm-9">
+                        <div class="col-xs-12 col-sm-8 no-padding">
+                            <select class="form-control" id="form-field-26">
+                                <option value="MedDRA/E[16.1]">MedDRA/E[16.1]</option>
+                                <option value="MedDRA/E[16.1]">MedDRA/E[16.1]</option>
+                                <option value="MedDRA/E[16.1]">MedDRA/E[16.1]</option>
+                                <option value="MedDRA/E[16.1]">MedDRA/E[16.1]</option>
+                                <option value="MedDRA/E[16.1]">MedDRA/E[16.1]</option>
+                                <option value="MedDRA/E[16.1]">MedDRA/E[16.1]</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>

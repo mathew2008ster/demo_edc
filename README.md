@@ -12,9 +12,10 @@ http://marswind.cn:3000/dataMgmt/block/list.html
 http://marswind.cn:3000/dataMgmt/block/details/index.html
 照片模版
 http://marswind.cn:3000/dataMgmt/block/details/photo.html
-字段列表（未完成）
+字段列表
 http://marswind.cn:3000/dataMgmt/block/details/list.html
-
+添加/编辑字段
+http://marswind.cn:3000/dataMgmt/block/details/edition.html
 
 ### 草稿管理
 草稿设置
