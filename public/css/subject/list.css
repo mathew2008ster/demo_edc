@@ -1,0 +1,21 @@
+.search-bar .nav-search-input{
+    height: 33px;
+}
+.search-bar .select-sm,
+.search-bar .select-sm option{
+    height: 33px;
+    line-height: 27px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.accordion-style1.panel-group .panel+.panel { margin-top: -1px;}
+.accordion-style1.panel-group .panel-heading .accordion-toggle,
+.accordion-style1.panel-group .panel-heading .accordion-toggle:hover,
+.accordion-style1.panel-group .panel-heading .accordion-toggle.collapsed { background: #fff;}
+.accordion-style1.panel-group .panel-heading .accordion-toggle { padding: 4px 5px;}
+/*.accordion-style1.panel-group .panel-body { padding: 10px;}*/
+
+.ace-icon-avt {width: 40px; height: 40px; border-radius: 50%; overflow: hidden; border: 1px solid #eee;}
+.ace-icon-avt img { width: 100%; }
+

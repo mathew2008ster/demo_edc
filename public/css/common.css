@@ -6,7 +6,9 @@
 .font-80 { font-size: 80px;}
 .w-80 {width: 80px;}
 .vertical-bottom { vertical-align: bottom !important;}
+.vertical-middle { vertical-align: middle !important;}
 .no-border-bottom { border-bottom: none !important;}
+.no-border{ border: none !important;}
 
 @media (max-width: 479px)  {
     .navbar-fixed-top + .main-container {

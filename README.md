@@ -3,15 +3,18 @@ frontend templates for edc project.
 
 链接：
 
-###受试者管理
+### 受试者管理
 添加受试者
 http://marswind.cn:3000/subject/add.html
+受试者列表
+http://marswind.cn:3000/subject/list.html
 
-###数据管理
+### 数据管理
 添加数据块
 http://marswind.cn:3000/dataMgmt/block/add.html
 数据块列表
 http://marswind.cn:3000/dataMgmt/block/list.html
+
 详情
 数据块设置
 http://marswind.cn:3000/dataMgmt/block/details/index.html
